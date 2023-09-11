@@ -3,7 +3,7 @@ package domain
 import (
 	"net/http"
 
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 // Product is entity of table product database column

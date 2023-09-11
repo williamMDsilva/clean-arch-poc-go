@@ -1,6 +1,6 @@
 package productservice
 
-import "github.com/williamMDsilva/clean-arch-poc-go/core/domain"
+import "github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
 
 type service struct {
 	usecase domain.ProductUseCase

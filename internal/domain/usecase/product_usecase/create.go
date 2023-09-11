@@ -1,8 +1,8 @@
 package productusecase
 
 import (
-	"github.com/williamMDsilva/clean-arch-poc-go/core/domain"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 func (usecase usecase) Create(productRequest *dto.CreateProductRequest) (*domain.Product, error) {

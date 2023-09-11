@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 // @Summary Create new product

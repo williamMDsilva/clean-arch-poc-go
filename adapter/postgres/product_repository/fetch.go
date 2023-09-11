@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/booscaaa/go-paginate/paginate"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/domain"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 // @Summary Fetch products with server pagination

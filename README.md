@@ -1,7 +1,17 @@
-# DATABASE
+# Summary
+
+Go lang project to learn clean architecture by exemple and implement hexagoal arch with tests and docs
+
+# DATABASE - create new migration
 
 ```bash
 migrate create -ext sql -dir database/migrations -seq create_product_table
+```
+
+# DATABASE - run all new migration
+
+```bash
+go run cmd/cli/main.go
 ```
 
 # local dependencies
@@ -39,13 +49,13 @@ https://github.com/golang-migrate/migrate
 http://localhost:3000/swagger/
 
 ```bash
-swag init -d adapter/http --parseDependency --parseInternal --parseDepth 2 -o adapter/http/docs
+export PATH=$(go env GOPATH)/bin:$PATH && swag init -d adapter/api --parseDependency --parseInternal --parseDepth 2 -o adapter/api/docs
 ```
 
 # Run
 
 ```bash
-go run adapter/http/main.go
+go run cmd/api/main.go
 ```
 
 # tests

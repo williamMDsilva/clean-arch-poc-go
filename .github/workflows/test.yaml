@@ -17,6 +17,6 @@ jobs:
       - name: Download swaggo
         run: go install github.com/swaggo/swag/cmd/swag@latest
       - name: Install swaggo
-        run: swag init -d adapter/http --parseDependency --parseInternal --parseDepth 2 -o adapter/http/docs
+        run: swag init -d cmd/api --parseDependency --parseInternal --parseDepth 2 -o adapter/api/docs
       - name: Test
         run: go mod tidy && go test ./... -v

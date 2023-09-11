@@ -7,9 +7,9 @@ import (
 	"github.com/bxcodec/faker/v3"
 	"github.com/pashagolub/pgxmock"
 	"github.com/stretchr/testify/require"
-	"github.com/williamMDsilva/clean-arch-poc-go/adapter/postgres/productrepository"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/domain"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	productrepository "github.com/williamMDsilva/clean-arch-poc-go/adapter/postgres/product_repository"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 func setupCreate() ([]string, dto.CreateProductRequest, domain.Product, pgxmock.PgxPoolIface) {

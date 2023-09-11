@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/spf13/viper"
 	httpSwagger "github.com/swaggo/http-swagger"
-	_ "github.com/williamMDsilva/clean-arch-poc-go/adapter/http/docs"
+	_ "github.com/williamMDsilva/clean-arch-poc-go/adapter/api/docs"
 	"github.com/williamMDsilva/clean-arch-poc-go/adapter/postgres"
 	"github.com/williamMDsilva/clean-arch-poc-go/di"
 )
@@ -34,7 +34,6 @@ func main() {
 	conn := postgres.GetConnection(ctx)
 	defer conn.Close()
 
-	postgres.RunMigrations()
 	productService := di.ConfigProductDI(conn)
 
 	router := mux.NewRouter()

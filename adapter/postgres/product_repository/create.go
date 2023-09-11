@@ -3,8 +3,8 @@ package productrepository
 import (
 	"context"
 
-	"github.com/williamMDsilva/clean-arch-poc-go/core/domain"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 )
 
 // @Summary Create new product

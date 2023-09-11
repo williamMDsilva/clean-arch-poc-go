@@ -2,7 +2,7 @@ package productrepository
 
 import (
 	"github.com/williamMDsilva/clean-arch-poc-go/adapter/postgres"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/domain"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
 )
 
 type repository struct {

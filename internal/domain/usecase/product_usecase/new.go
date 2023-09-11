@@ -1,6 +1,6 @@
 package productusecase
 
-import "github.com/williamMDsilva/clean-arch-poc-go/core/domain"
+import "github.com/williamMDsilva/clean-arch-poc-go/internal/domain"
 
 type usecase struct {
 	repository domain.ProductRepository

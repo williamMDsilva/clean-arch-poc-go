@@ -6,7 +6,7 @@ import (
 	"testing"
 
 	"github.com/bxcodec/faker/v3"
-	"github.com/williamMDsilva/clean-arch-poc-go/core/dto"
+	"github.com/williamMDsilva/clean-arch-poc-go/internal/dto"
 
 	"github.com/stretchr/testify/require"
 )
