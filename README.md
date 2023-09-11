@@ -22,16 +22,17 @@ https://github.com/stretchr/testify
 https://github.com/pashagolub/pgxmock
 https://github.com/golang-migrate/migrate
 
-Banco de dados: PostgresSQL
+**_Banco de dados_**: PostgresSQL
 
-Libs no go
-Pgx:
-Mux:
-Go-paginate:
-Viper:
-Testify:
-Pgx Mock:
-Migrate:
+**_Libs no go_**
+
+- Pgx
+- Mux
+- Go-paginate
+- Viper
+- Testify
+- Pgx Mock
+- Migrate
 
 # docs
 
@@ -41,6 +42,23 @@ http://localhost:3000/swagger/
 swag init -d adapter/http --parseDependency --parseInternal --parseDepth 2 -o adapter/http/docs
 ```
 
-# run
+# Run
 
+```bash
 go run adapter/http/main.go
+```
+
+# tests
+
+### Test verbose
+
+```bash
+go test ./... -v
+```
+
+### Cover profile
+
+```bash
+go test -coverprofile cover.out ./...
+go tool cover -html=cover.out -o cover.html
+```

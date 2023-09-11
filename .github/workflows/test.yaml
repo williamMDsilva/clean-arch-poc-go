@@ -1,1 +1,22 @@
-//TODO
+on: [push, pull_request]
+name: Run test suite
+jobs:
+  test:
+    strategy:
+      matrix:
+        go-version: [1.21.x]
+        os: [ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Install Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ${{ matrix.go-version }}
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Download swaggo
+        run: go install github.com/swaggo/swag/cmd/swag@latest
+      - name: Install swaggo
+        run: swag init -d adapter/http --parseDependency --parseInternal --parseDepth 2 -o adapter/http/docs
+      - name: Test
+        run: go mod tidy && go test ./... -v
